@@ -1,0 +1,11 @@
+2018-07-02 01:45:56,450 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.epam.prelearning:StudentManagement:0.0.1-SNAPSHOT @ D:\Java Programs\Student Managemet System\StudentManagement\pom.xml.
+2018-07-02 01:45:56,459 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.epam.prelearning:StudentManagement:0.0.1-SNAPSHOT @ D:\Java Programs\Student Managemet System\StudentManagement\pom.xml.
+2018-07-02 01:45:58,533 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-02 01:45:58,566 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-02 01:45:58,584 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-02 01:45:58,586 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-02 01:46:01,676 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.epam.prelearning:StudentManagement:0.0.1-SNAPSHOT @ D:\Java Programs\Student Managemet System\StudentManagement\pom.xml.
+2018-07-02 01:46:03,873 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-02 01:46:03,877 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-02 01:46:03,882 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-02 01:46:03,885 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
