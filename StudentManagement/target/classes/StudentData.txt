@@ -2,7 +2,7 @@
 14544, Hrithik, Roshan, CSE, 4
 14501, Deepika, Padukone, CSE, 4
 14423, Anushka, Sharma, ECE, 4
-14420, Sunil, Shetty, ECE, 4
+14420, Shahid, Kapoor, ECE, 4
 15523, Saif, Ali Khan, CSE, 3
 15533, Kareena, Kapoor, CSE, 3
 15211, Abhishek, Bachan, IT, 3
