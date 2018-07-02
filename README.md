@@ -6,4 +6,4 @@ The project has the following features:
 2. Sort Student Module
 3. Display Student Module
 
-The repository also contains the [output folder](https://github.com/EPAM-PreLearning-Week2/Outputs "Output Folder") that shows the program execution outputs
+The repository also contains the [output folder](https://github.com/prasenjeetpaul/EPAM-PreLearning-Week2/tree/master/Outputs "Output Folder") that shows the program execution outputs
