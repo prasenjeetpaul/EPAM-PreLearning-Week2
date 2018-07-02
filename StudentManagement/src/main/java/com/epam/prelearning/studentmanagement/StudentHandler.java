@@ -7,10 +7,14 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.InputMismatchException;
 
 public class StudentHandler 
 {
 	private ArrayList<Student> studentList;
+	private final String INVALID_INPUT_MESSAGE = "Invalid Input!!";
+	private final int DEFAULT_USER_CHOICE = -1;
+	
 	public StudentHandler()
 	{
 		final String studentDataPath = "src/main/resources/StudentData.txt";
@@ -70,16 +74,25 @@ public class StudentHandler
 	{
 		Scanner inputScanner = new Scanner(System.in);
 		SortStudent sortStudent = new SortStudent();
-		System.out.println("--- Select an Sorting Option --");
+		System.out.println("\n------ Select an Sorting Option --");
 		System.out.println("1. Student ID\t 2. Branch\t 3.Year");
 		System.out.print("Enter your option: ");
-		int userChoice = inputScanner.nextInt();
+		int userChoice = DEFAULT_USER_CHOICE;
+		try
+		{
+			userChoice = inputScanner.nextInt();
+		}
+		catch(InputMismatchException exception)
+		{
+			System.out.println(this.INVALID_INPUT_MESSAGE);
+			return ;
+		}
 		switch(userChoice)
 		{
-			case 1:	studentList = sortStudent.sortByID(studentList);		break;
-			case 2:	studentList = sortStudent.sortByBranch(studentList);	break;
-			case 3: studentList = sortStudent.sortByYear(studentList);		break;
-			default:	System.out.println("Invalid Choice!"); 				break;
+			case 1:		studentList = sortStudent.sortByID(studentList);		break;
+			case 2:		studentList = sortStudent.sortByBranch(studentList);	break;
+			case 3: 	studentList = sortStudent.sortByYear(studentList);		break;
+			default:	System.out.println(this.INVALID_INPUT_MESSAGE); 		break;
 		}
 		displayStudent();
 		
@@ -89,24 +102,47 @@ public class StudentHandler
 	{
 		Scanner inputScanner = new Scanner(System.in);
 		SearchStudent searchStudent = new SearchStudent();
-		System.out.println("--- Select an Searching Option --");
+		System.out.println("\n--- Select an Searching Option --");
 		System.out.println("1. Student ID\t 2. Student Name\t 3. Branch\t 4.Year");
 		System.out.print("Enter your option: ");
-		int userChoice = inputScanner.nextInt();
+		int userChoice = DEFAULT_USER_CHOICE;
+		try
+		{
+			userChoice = inputScanner.nextInt();
+		}
+		catch(InputMismatchException exception)
+		{
+			System.out.println(this.INVALID_INPUT_MESSAGE);
+			return ;
+		}
 		ArrayList<Student> studentFoundList = new ArrayList<Student>();
 		switch(userChoice)
 		{
-			case 1:		System.out.print("Enter the Student ID: ");
-						int studentID = inputScanner.nextInt();
-						studentFoundList = searchStudent.searchByID(studentList, studentID);		
-						break;
-						
-			default:	System.out.println("Invalid Choice!"); 						break;
+			case 1:	System.out.print("Enter Student ID: ");
+					int studentID = inputScanner.nextInt();
+					studentFoundList = searchStudent.searchByID(studentList, studentID);		
+					break;
 			
-			/*case 2:	studentList = sortStudent.sortByBranch(studentList);	break;
-			case 3: studentList = sortStudent.sortByYear(studentList);		break;
-			default:	System.out.println("Invalid Choice!"); 				break;
-			*/
+			case 2:	System.out.print("Enter Student Name (First Name/Last Name): ");
+					inputScanner.nextLine();
+					String studentName = inputScanner.nextLine();
+					studentFoundList = searchStudent.searchByName(studentList, studentName.toLowerCase());		
+					break;
+					
+			case 3: System.out.print("Enter Student Branch: ");
+					inputScanner.nextLine();
+					String studentBranch = inputScanner.nextLine();
+					studentFoundList = searchStudent.searchByBranch(studentList, studentBranch.toLowerCase());		
+					break;
+			
+			case 4: System.out.print("Enter Student Year: ");
+					int studentYear = inputScanner.nextInt();
+					studentFoundList = searchStudent.searchByYear(studentList, studentYear);		
+					break;
+					
+			default:	System.out.println(this.INVALID_INPUT_MESSAGE); 
+						break;
+			
 		}
 		
 		if(studentFoundList.size()==0)

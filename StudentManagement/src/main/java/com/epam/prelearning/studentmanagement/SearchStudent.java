@@ -17,48 +17,51 @@ public class SearchStudent
 		
 		return studentFoundList;
 	}
-	/*
-	public ArrayList<Student> sortByBranch(ArrayList<Student> studentList)
+	
+	public ArrayList<Student> searchByName(ArrayList<Student> studentList, String studentName)
 	{
-		for(int i=0; i<studentList.size(); i++)
+		ArrayList<Student> studentFoundList = new ArrayList<Student> ();
+		for(Student currentStudent: studentList)
 		{
-			for(int j=i+1; j<studentList.size(); j++)
-			{
-				if(studentList.get(i).getBranch().compareTo(studentList.get(j).getBranch())>0)
-				{
-					Student temp = studentList.get(i);
-					studentList.set(i, studentList.get(j));
-					studentList.set(j, temp);
-				}
-			}
-			
-			
+			String firstName = currentStudent.getFirstName().toLowerCase();
+			String lastName = currentStudent.getLastName().toLowerCase();
+			if(	studentName.contains(firstName) || studentName.contains(lastName) || firstName.contains(studentName) || lastName.contains(studentName))
+				studentFoundList.add(currentStudent);
 			
 		}
-		System.out.println("Student Data Sorted According to Branch !!");
-		return studentList;
+		
+		return studentFoundList;
 	}
 	
-	public ArrayList<Student> sortByYear(ArrayList<Student> studentList)
+	
+	
+	public ArrayList<Student> searchByBranch(ArrayList<Student> studentList, String studentBranch)
 	{
-		for(int i=0; i<studentList.size(); i++)
+		ArrayList<Student> studentFoundList = new ArrayList<Student> ();
+		for(Student currentStudent: studentList)
 		{
-			int min = Integer.MAX_VALUE;
-			int minStudentIndex=i;
-			for(int j=i+1; j<studentList.size(); j++)
-			{
-				if(studentList.get(j).getYear()<studentList.get(minStudentIndex).getYear())
-					minStudentIndex = j; 
-			}
-			
-			Student temp = studentList.get(i);
-			studentList.set(i, studentList.get(minStudentIndex));
-			studentList.set(minStudentIndex, temp);
+			String currentStudentBranch = currentStudent.getBranch().toLowerCase();
+			if(	currentStudentBranch.contains(studentBranch) || studentBranch.contains(currentStudentBranch) )
+				studentFoundList.add(currentStudent);
 			
 		}
-		System.out.println("Student Data Sorted According to Year !!");
-		return studentList;
+		
+		return studentFoundList;
 	}
-	*/
+	
+	
+	public ArrayList<Student> searchByYear(ArrayList<Student> studentList, int studentYear)
+	{
+		ArrayList<Student> studentFoundList = new ArrayList<Student> ();
+		for(Student currentStudent: studentList) 
+		{
+			if(	currentStudent.getYear() == studentYear  )
+				studentFoundList.add(currentStudent);
+			
+		}
+		
+		return studentFoundList;
+	}
+	
 
 }

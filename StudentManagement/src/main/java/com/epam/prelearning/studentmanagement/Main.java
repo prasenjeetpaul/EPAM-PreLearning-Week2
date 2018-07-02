@@ -10,7 +10,7 @@ public class Main
 	static final int SORT_OPTION = 2;
 	static final int DISPLAY_OPTION = 3;
 	static final int EXIT_OPTION = 4;
-	
+	static final int DEFAULT_USER_CHOICE = -1;
 	
 	public static void main(String[] args)
 	{
@@ -37,11 +37,11 @@ public class Main
 	{
 		@SuppressWarnings("resource")
 		Scanner inputScanner = new Scanner(System.in);
-		int userChoice = -1;
+		int userChoice = DEFAULT_USER_CHOICE;
 		
 		try
 		{
-			System.out.println("********************* Program Menu ***********************");
+			System.out.println("\n********************* Program Menu ***********************");
 			System.out.println( SEARCH_OPTION+". Search Student\t "+
 								SORT_OPTION+". Sort Students\t "+
 								DISPLAY_OPTION+". Display Students\t "+
