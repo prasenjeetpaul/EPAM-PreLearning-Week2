@@ -72,26 +72,29 @@ public class StudentHandler
 	
 	public void sortStudent()
 	{
+		@SuppressWarnings("resource")
 		Scanner inputScanner = new Scanner(System.in);
 		SortStudent sortStudent = new SortStudent();
+		int userChoice = DEFAULT_USER_CHOICE;
+		
 		System.out.println("\n------ Select an Sorting Option --");
 		System.out.println("1. Student ID\t 2. Branch\t 3.Year");
 		System.out.print("Enter your option: ");
-		int userChoice = DEFAULT_USER_CHOICE;
 		try
 		{
-			userChoice = inputScanner.nextInt();
+			userChoice = inputScanner.nextInt();			
 		}
 		catch(InputMismatchException exception)
 		{
 			System.out.println(this.INVALID_INPUT_MESSAGE);
 			return ;
 		}
+		SortOrder sortOrder = getSortingOrder();
 		switch(userChoice)
 		{
-			case 1:		studentList = sortStudent.sortByID(studentList);		break;
-			case 2:		studentList = sortStudent.sortByBranch(studentList);	break;
-			case 3: 	studentList = sortStudent.sortByYear(studentList);		break;
+			case 1:		studentList = sortStudent.sortByID(studentList, sortOrder);		break;
+			case 2:		studentList = sortStudent.sortByBranch(studentList, sortOrder);	break;
+			case 3: 	studentList = sortStudent.sortByYear(studentList, sortOrder);		break;
 			default:	System.out.println(this.INVALID_INPUT_MESSAGE); 		break;
 		}
 		displayStudent();
@@ -100,6 +103,7 @@ public class StudentHandler
 	
 	public void searchStudent()
 	{
+		@SuppressWarnings("resource")
 		Scanner inputScanner = new Scanner(System.in);
 		SearchStudent searchStudent = new SearchStudent();
 		System.out.println("\n--- Select an Searching Option --");
@@ -149,6 +153,35 @@ public class StudentHandler
 			System.out.println("--- Student Not Found ---");
 		else
 			displayStudent(studentFoundList);
+	}
+	
+	
+	private SortOrder getSortingOrder()
+	{
+		@SuppressWarnings("resource")
+		Scanner inputScanner = new Scanner(System.in);
+		SortOrder sortOrder = SortOrder.ASCENDING; 
+		try
+		{
+			System.out.println("\n------ Select an Sorting Order --");
+			System.out.println("1. Ascending Order\t 2. Descending Order");
+			System.out.print("Enter your option: ");
+			int sortChoice = inputScanner.nextInt();
+			switch(sortChoice)
+			{
+				case 1:	sortOrder = SortOrder.ASCENDING;	break;
+				case 2: sortOrder = SortOrder.DESCENDING;	break; 
+				default: System.out.println(this.INVALID_INPUT_MESSAGE+"\nSorting in Ascending Order");	break;
+			}
+			
+		}
+		catch(InputMismatchException e)
+		{
+			sortOrder = SortOrder.ASCENDING;
+			System.out.println(this.INVALID_INPUT_MESSAGE+"\nSorting in Ascending Order");
+		}
+		
+		return sortOrder;
 	}
 	
 	
