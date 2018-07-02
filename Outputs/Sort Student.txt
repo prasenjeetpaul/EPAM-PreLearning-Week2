@@ -1,0 +1,154 @@
+********** Welcome to Student Management System **********
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 2
+
+------ Select an Sorting Option --
+1. Student ID	 2. Branch	 3.Year
+Enter your option: 1
+
+------ Select an Sorting Order --
+1. Ascending Order	 2. Descending Order
+Enter your option: 2
+Student Data Sorted According to StudentID !!
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    17556     |    Sonam     |    Kapoor    |   CSE    |   1    |
+|    17536     |    Ranbir    |    Kapoor    |   CSE    |   1    |
+|    17533     |     Alia     |    Bhatt     |   CSE    |   1    |
+|    17185     |   Bahubali   |   Prabhas    |   MECH   |   1    |
+|    17150     |    Salman    |     Khan     |   MECH   |   1    |
+|    17101     |    Sanjay    |     Dutt     |   MECH   |   1    |
+|    16385     |   Sharukh    |     Khan     |   EEE    |   2    |
+|    16360     |    Aamir     |     Khan     |   EEE    |   2    |
+|    16311     |    Akshay    |    Kumar     |   EEE    |   2    |
+|    15533     |   Kareena    |    Kapoor    |   CSE    |   3    |
+|    15523     |     Saif     |   Ali Khan   |   CSE    |   3    |
+|    15255     |  Aishwarya   |    Bachan    |    IT    |   3    |
+|    15211     |   Abhishek   |    Bachan    |    IT    |   3    |
+|    14544     |   Hrithik    |    Roshan    |   CSE    |   4    |
+|    14536     |  Prasenjeet  |     Paul     |   CSE    |   4    |
+|    14501     |   Deepika    |   Padukone   |   CSE    |   4    |
+|    14423     |   Anushka    |    Sharma    |   ECE    |   4    |
+|    14420     |    Shahid    |    Kapoor    |   ECE    |   4    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 2
+
+------ Select an Sorting Option --
+1. Student ID	 2. Branch	 3.Year
+Enter your option: 2
+
+------ Select an Sorting Order --
+1. Ascending Order	 2. Descending Order
+Enter your option: 1
+Student Data Sorted According to Branch !!
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    17556     |    Sonam     |    Kapoor    |   CSE    |   1    |
+|    17536     |    Ranbir    |    Kapoor    |   CSE    |   1    |
+|    17533     |     Alia     |    Bhatt     |   CSE    |   1    |
+|    15533     |   Kareena    |    Kapoor    |   CSE    |   3    |
+|    15523     |     Saif     |   Ali Khan   |   CSE    |   3    |
+|    14544     |   Hrithik    |    Roshan    |   CSE    |   4    |
+|    14536     |  Prasenjeet  |     Paul     |   CSE    |   4    |
+|    14501     |   Deepika    |   Padukone   |   CSE    |   4    |
+|    14423     |   Anushka    |    Sharma    |   ECE    |   4    |
+|    14420     |    Shahid    |    Kapoor    |   ECE    |   4    |
+|    16360     |    Aamir     |     Khan     |   EEE    |   2    |
+|    16311     |    Akshay    |    Kumar     |   EEE    |   2    |
+|    16385     |   Sharukh    |     Khan     |   EEE    |   2    |
+|    15211     |   Abhishek   |    Bachan    |    IT    |   3    |
+|    15255     |  Aishwarya   |    Bachan    |    IT    |   3    |
+|    17185     |   Bahubali   |   Prabhas    |   MECH   |   1    |
+|    17150     |    Salman    |     Khan     |   MECH   |   1    |
+|    17101     |    Sanjay    |     Dutt     |   MECH   |   1    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 2
+
+------ Select an Sorting Option --
+1. Student ID	 2. Branch	 3.Year
+Enter your option: 3
+
+------ Select an Sorting Order --
+1. Ascending Order	 2. Descending Order
+Enter your option: 1
+Student Data Sorted According to StudentID !!
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    17556     |    Sonam     |    Kapoor    |   CSE    |   1    |
+|    17536     |    Ranbir    |    Kapoor    |   CSE    |   1    |
+|    17533     |     Alia     |    Bhatt     |   CSE    |   1    |
+|    17185     |   Bahubali   |   Prabhas    |   MECH   |   1    |
+|    17150     |    Salman    |     Khan     |   MECH   |   1    |
+|    17101     |    Sanjay    |     Dutt     |   MECH   |   1    |
+|    16360     |    Aamir     |     Khan     |   EEE    |   2    |
+|    16311     |    Akshay    |    Kumar     |   EEE    |   2    |
+|    16385     |   Sharukh    |     Khan     |   EEE    |   2    |
+|    15211     |   Abhishek   |    Bachan    |    IT    |   3    |
+|    15255     |  Aishwarya   |    Bachan    |    IT    |   3    |
+|    15533     |   Kareena    |    Kapoor    |   CSE    |   3    |
+|    15523     |     Saif     |   Ali Khan   |   CSE    |   3    |
+|    14420     |    Shahid    |    Kapoor    |   ECE    |   4    |
+|    14536     |  Prasenjeet  |     Paul     |   CSE    |   4    |
+|    14501     |   Deepika    |   Padukone   |   CSE    |   4    |
+|    14423     |   Anushka    |    Sharma    |   ECE    |   4    |
+|    14544     |   Hrithik    |    Roshan    |   CSE    |   4    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 2
+
+------ Select an Sorting Option --
+1. Student ID	 2. Branch	 3.Year
+Enter your option: 2
+
+------ Select an Sorting Order --
+1. Ascending Order	 2. Descending Order
+Enter your option: 2
+Student Data Sorted According to Branch !!
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    17185     |   Bahubali   |   Prabhas    |   MECH   |   1    |
+|    17150     |    Salman    |     Khan     |   MECH   |   1    |
+|    17101     |    Sanjay    |     Dutt     |   MECH   |   1    |
+|    15211     |   Abhishek   |    Bachan    |    IT    |   3    |
+|    15255     |  Aishwarya   |    Bachan    |    IT    |   3    |
+|    16385     |   Sharukh    |     Khan     |   EEE    |   2    |
+|    16360     |    Aamir     |     Khan     |   EEE    |   2    |
+|    16311     |    Akshay    |    Kumar     |   EEE    |   2    |
+|    14420     |    Shahid    |    Kapoor    |   ECE    |   4    |
+|    14423     |   Anushka    |    Sharma    |   ECE    |   4    |
+|    17536     |    Ranbir    |    Kapoor    |   CSE    |   1    |
+|    15533     |   Kareena    |    Kapoor    |   CSE    |   3    |
+|    15523     |     Saif     |   Ali Khan   |   CSE    |   3    |
+|    17533     |     Alia     |    Bhatt     |   CSE    |   1    |
+|    14536     |  Prasenjeet  |     Paul     |   CSE    |   4    |
+|    14501     |   Deepika    |   Padukone   |   CSE    |   4    |
+|    17556     |    Sonam     |    Kapoor    |   CSE    |   1    |
+|    14544     |   Hrithik    |    Roshan    |   CSE    |   4    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 4
+******************** Program Exited **********************

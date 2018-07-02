@@ -1,0 +1,95 @@
+********** Welcome to Student Management System **********
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 1
+
+--- Select an Searching Option --
+1. Student ID	 2. Student Name	 3. Branch	 4.Year
+Enter your option: 1
+Enter Student ID: 17533
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    17533     |     Alia     |    Bhatt     |   CSE    |   1    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 1
+
+--- Select an Searching Option --
+1. Student ID	 2. Student Name	 3. Branch	 4.Year
+Enter your option: 2
+Enter Student Name (First Name/Last Name): kapoor
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    14420     |    Shahid    |    Kapoor    |   ECE    |   4    |
+|    15533     |   Kareena    |    Kapoor    |   CSE    |   3    |
+|    17536     |    Ranbir    |    Kapoor    |   CSE    |   1    |
+|    17556     |    Sonam     |    Kapoor    |   CSE    |   1    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 1
+
+--- Select an Searching Option --
+1. Student ID	 2. Student Name	 3. Branch	 4.Year
+Enter your option: 2
+Enter Student Name (First Name/Last Name): prasenjeet paul
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    14536     |  Prasenjeet  |     Paul     |   CSE    |   4    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 1
+
+--- Select an Searching Option --
+1. Student ID	 2. Student Name	 3. Branch	 4.Year
+Enter your option: 3
+Enter Student Branch: ece
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    14423     |   Anushka    |    Sharma    |   ECE    |   4    |
+|    14420     |    Shahid    |    Kapoor    |   ECE    |   4    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 1
+
+--- Select an Searching Option --
+1. Student ID	 2. Student Name	 3. Branch	 4.Year
+Enter your option: 4
+Enter Student Year: 1
+
++--------------+--------------+--------------+----------+--------+
+|  Student ID  |  First Name  |  Last Name   |  Branch  |  Year  |
++--------------+--------------+--------------+----------+--------+
+|    17101     |    Sanjay    |     Dutt     |   MECH   |   1    |
+|    17150     |    Salman    |     Khan     |   MECH   |   1    |
+|    17185     |   Bahubali   |   Prabhas    |   MECH   |   1    |
+|    17536     |    Ranbir    |    Kapoor    |   CSE    |   1    |
+|    17556     |    Sonam     |    Kapoor    |   CSE    |   1    |
+|    17533     |     Alia     |    Bhatt     |   CSE    |   1    |
++--------------+--------------+--------------+----------+--------+
+
+
+********************* Program Menu ***********************
+1. Search Student	 2. Sort Students	 3. Display Students	 4. Exit
+Enter your choice: 4
+******************** Program Exited **********************
