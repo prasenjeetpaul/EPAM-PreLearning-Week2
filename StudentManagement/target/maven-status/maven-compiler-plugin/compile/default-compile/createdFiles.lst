@@ -2,5 +2,6 @@ com\epam\prelearning\studentmanagement\DisplayStudent.class
 com\epam\prelearning\studentmanagement\SortStudent.class
 com\epam\prelearning\studentmanagement\Main.class
 com\epam\prelearning\studentmanagement\SearchStudent.class
+com\epam\prelearning\studentmanagement\SortOrder.class
 com\epam\prelearning\studentmanagement\StudentHandler.class
 com\epam\prelearning\studentmanagement\Student.class

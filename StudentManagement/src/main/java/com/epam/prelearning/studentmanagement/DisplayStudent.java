@@ -1,3 +1,10 @@
+/**
+ * DisplayStudent.java
+ * v 1.0
+ * source: https://stackoverflow.com/questions/2745206/output-in-a-table-format-in-javas-system-out
+ * This java files helps to display the data in an organized table format.
+ */
+
 package com.epam.prelearning.studentmanagement;
 
 import java.util.HashMap;
@@ -12,7 +19,7 @@ public class DisplayStudent
     private String TABLE_V_SPLIT_SYMBOL = "|";
     private String TABLE_H_SPLIT_SYMBOL = "-";
 
-    public String generateTable(List<String> headersList, List<List<String>> rowsList,int... overRiddenHeaderHeight)
+    public String generateTable(List<String> headersList, List<List<String>> rowsList, int... overRiddenHeaderHeight)
     {
         StringBuilder stringBuilder = new StringBuilder();
         int rowHeight = overRiddenHeaderHeight.length > 0 ? overRiddenHeaderHeight[0] : 1; 

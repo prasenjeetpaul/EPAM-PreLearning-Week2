@@ -1,9 +1,16 @@
+/**
+ * SortStudent.java
+ * v 1.0
+ * This java file contains the code to sort student list according to user choice
+ */
+
 package com.epam.prelearning.studentmanagement;
 
 import java.util.ArrayList;
 
 public class SortStudent 
 {
+	/* Method to sort student data by student ID */
 	public ArrayList<Student> sortByID(ArrayList<Student> studentList, SortOrder sortOrder)
 	{
 		if(sortOrder.equals(SortOrder.ASCENDING))
@@ -15,6 +22,7 @@ public class SortStudent
 		return studentList;
 	}
 	
+	/* Method to sort student data by student ID in ascending order */
 	public ArrayList<Student> sortByIDAscending(ArrayList<Student> studentList)
 	{
 		for(int i=0; i<studentList.size(); i++)
@@ -33,7 +41,7 @@ public class SortStudent
 		return studentList;
 	}
 	
-	
+	/* Method to sort student data by student ID in descending order */
 	public ArrayList<Student> sortByIDDescending(ArrayList<Student> studentList)
 	{
 		for(int i=0; i<studentList.size(); i++)
@@ -53,6 +61,7 @@ public class SortStudent
 		return studentList;
 	}
 	
+	/* Method to sort student data by student branch */
 	public ArrayList<Student> sortByBranch(ArrayList<Student> studentList, SortOrder sortOrder)
 	{
 		if(sortOrder.equals(SortOrder.ASCENDING))
@@ -66,7 +75,7 @@ public class SortStudent
 	}
 	
 	
-	
+	/* Method to sort student data by student branch in ascending order */
 	public ArrayList<Student> sortByBranchAscending(ArrayList<Student> studentList)
 	{
 		for(int i=0; i<studentList.size(); i++)
@@ -84,7 +93,7 @@ public class SortStudent
 		return studentList;
 	}
 	
-	
+	/* Method to sort student data by student branch in descending order */
 	public ArrayList<Student> sortByBranchDescending(ArrayList<Student> studentList)
 	{
 		for(int i=0; i<studentList.size(); i++)
@@ -102,7 +111,7 @@ public class SortStudent
 		return studentList;
 	}
 	
-	
+	/* Method to sort student data by student year */
 	public ArrayList<Student> sortByYear(ArrayList<Student> studentList, SortOrder sortOrder)
 	{
 		if(sortOrder.equals(SortOrder.ASCENDING))
@@ -114,7 +123,7 @@ public class SortStudent
 		return studentList;
 	}
 	
-	
+	/* Method to sort student data by student year in ascending order */
 	public ArrayList<Student> sortByYearAscending(ArrayList<Student> studentList)
 	{
 		for(int i=0; i<studentList.size(); i++)
@@ -134,7 +143,7 @@ public class SortStudent
 		return studentList;
 	}
 	
-	
+	/* Method to sort student data by student year in descending order */
 	public ArrayList<Student> sortByYearDescending(ArrayList<Student> studentList)
 	{
 		for(int i=0; i<studentList.size(); i++)

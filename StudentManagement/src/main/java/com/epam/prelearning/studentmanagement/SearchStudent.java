@@ -1,10 +1,17 @@
+/**
+ * SearchStudent.java
+ * v 1.0
+ * This java file contains the code to search a particular user record or 
+ * list of user record based on the user input
+ */
+
 package com.epam.prelearning.studentmanagement;
 
 import java.util.ArrayList;
 
 public class SearchStudent
 {
-	
+	/* This method searches a student record based on student ID */
 	public ArrayList<Student> searchByID(ArrayList<Student> studentList, int studentID)
 	{
 		ArrayList<Student> studentFoundList = new ArrayList<Student> ();
@@ -18,6 +25,7 @@ public class SearchStudent
 		return studentFoundList;
 	}
 	
+	/* This method searches a student record based on student name */
 	public ArrayList<Student> searchByName(ArrayList<Student> studentList, String studentName)
 	{
 		ArrayList<Student> studentFoundList = new ArrayList<Student> ();
@@ -34,7 +42,7 @@ public class SearchStudent
 	}
 	
 	
-	
+	/* This method searches a student record based on student branch */
 	public ArrayList<Student> searchByBranch(ArrayList<Student> studentList, String studentBranch)
 	{
 		ArrayList<Student> studentFoundList = new ArrayList<Student> ();
@@ -49,7 +57,7 @@ public class SearchStudent
 		return studentFoundList;
 	}
 	
-	
+	/* This method searches a student record based on student year */
 	public ArrayList<Student> searchByYear(ArrayList<Student> studentList, int studentYear)
 	{
 		ArrayList<Student> studentFoundList = new ArrayList<Student> ();

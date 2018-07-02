@@ -1,3 +1,9 @@
+/**
+ * StudentHandler.java
+ * v 1.0
+ * This java file handles the Student Management Operations.
+ * It provides operations like load the student data and perform actions on it.
+ */
 package com.epam.prelearning.studentmanagement;
 
 import java.util.List;
@@ -15,6 +21,7 @@ public class StudentHandler
 	private final String INVALID_INPUT_MESSAGE = "Invalid Input!!";
 	private final int DEFAULT_USER_CHOICE = -1;
 	
+	/* This constructor load and stores the student data in runtime*/
 	public StudentHandler()
 	{
 		final String studentDataPath = "src/main/resources/StudentData.txt";
@@ -46,6 +53,7 @@ public class StudentHandler
 		}
 	}
 	
+	/* This method displays the student record*/
 	public void displayStudent()
 	{
 		List<String> headerList = new ArrayList<String>();
@@ -58,6 +66,7 @@ public class StudentHandler
 		System.out.println(display.generateTable(headerList, rowList));
 	}
 	
+	/* Overloaded method to display the student record*/
 	public void displayStudent(ArrayList<Student> studentList)
 	{
 		List<String> headerList = new ArrayList<String>();
@@ -70,6 +79,7 @@ public class StudentHandler
 		System.out.println(display.generateTable(headerList, rowList));
 	}
 	
+	/* This method sorts the student data as per the user requirement*/
 	public void sortStudent()
 	{
 		@SuppressWarnings("resource")
@@ -101,6 +111,7 @@ public class StudentHandler
 		
 	}
 	
+	/* This method searches for a/list of student record and display it*/
 	public void searchStudent()
 	{
 		@SuppressWarnings("resource")
@@ -155,7 +166,7 @@ public class StudentHandler
 			displayStudent(studentFoundList);
 	}
 	
-	
+	/* This method gets the sorting order from the user */
 	private SortOrder getSortingOrder()
 	{
 		@SuppressWarnings("resource")

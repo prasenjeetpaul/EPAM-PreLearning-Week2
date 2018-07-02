@@ -1,0 +1,4 @@
+/**
+*This package contains the code for Student Management Sytem
+**/
+package com.epam.prelearning.studentmanagement;
