@@ -47,6 +47,18 @@ public class StudentHandler
 		List<String> headerList = new ArrayList<String>();
 		Collections.addAll(headerList, "Student ID", "First Name", "Last Name", "Branch", "Year");
 		List<List<String>> rowList = new ArrayList<List<String>>();
+		for(Student currentStudent: this.studentList)
+			rowList.add(currentStudent.getData());
+
+		DisplayStudent display = new DisplayStudent();
+		System.out.println(display.generateTable(headerList, rowList));
+	}
+	
+	public void displayStudent(ArrayList<Student> studentList)
+	{
+		List<String> headerList = new ArrayList<String>();
+		Collections.addAll(headerList, "Student ID", "First Name", "Last Name", "Branch", "Year");
+		List<List<String>> rowList = new ArrayList<List<String>>();
 		for(Student currentStudent: studentList)
 			rowList.add(currentStudent.getData());
 
@@ -75,6 +87,33 @@ public class StudentHandler
 	
 	public void searchStudent()
 	{
+		Scanner inputScanner = new Scanner(System.in);
+		SearchStudent searchStudent = new SearchStudent();
+		System.out.println("--- Select an Searching Option --");
+		System.out.println("1. Student ID\t 2. Student Name\t 3. Branch\t 4.Year");
+		System.out.print("Enter your option: ");
+		int userChoice = inputScanner.nextInt();
+		ArrayList<Student> studentFoundList = new ArrayList<Student>();
+		switch(userChoice)
+		{
+			case 1:		System.out.print("Enter the Student ID: ");
+						int studentID = inputScanner.nextInt();
+						studentFoundList = searchStudent.searchByID(studentList, studentID);		
+						break;
+						
+			default:	System.out.println("Invalid Choice!"); 						break;
+			
+			/*case 2:	studentList = sortStudent.sortByBranch(studentList);	break;
+			case 3: studentList = sortStudent.sortByYear(studentList);		break;
+			default:	System.out.println("Invalid Choice!"); 				break;
+			*/
+		}
 		
+		if(studentFoundList.size()==0)
+			System.out.println("--- Student Not Found ---");
+		else
+			displayStudent(studentFoundList);
 	}
+	
+	
 }
